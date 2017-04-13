@@ -1,0 +1,10 @@
+ /*
+ ---
+ name: Controlled input example
+ description: Simple controlled React input.  You won't be able to edit the value.
+ authors:
+   - Matt Ruby
+ normalize_css: no
+ js_wrap: b
+ ...
+ */
