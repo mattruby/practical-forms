@@ -1,0 +1,10 @@
+ /*
+ ---
+ name: Uncontrolled input example
+ description: Simple uncontrolled React input
+ authors:
+   - Matt Ruby
+ normalize_css: no
+ js_wrap: b
+ ...
+ */
