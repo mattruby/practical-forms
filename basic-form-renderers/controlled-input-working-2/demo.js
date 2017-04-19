@@ -7,19 +7,23 @@ var inputRenderer = React.createClass({
 		}
 	},
 	render: function () {
-		return React.createElement('div', null,
-			React.createElement('input', {
-				type: 'text',
-				name: 'input1',
-				value: this.state.input1,
-				onChange: this.inputChangeHandler
-			}),
-			React.createElement('input', {
-				type: 'text',
-				name: 'input2',
-				value: this.state.input2,
-				onChange: this.inputChangeHandler
-			})
+		return React.createElement('form', null,
+			React.createElement('div', {className: 'form-group'},
+				React.createElement('input', {
+					type: 'text',
+					name: 'input1',
+					value: this.state.input1,
+					onChange: this.inputChangeHandler
+				})
+			),
+			React.createElement('div', {className: 'form-group'},
+				React.createElement('input', {
+					type: 'text',
+					name: 'input2',
+					value: this.state.input2,
+					onChange: this.inputChangeHandler
+				})
+			)
 		);
 	},
 	inputChangeHandler: function (event) {
