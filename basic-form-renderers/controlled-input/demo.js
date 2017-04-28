@@ -1,4 +1,3 @@
-// Note the Provider and color
 var formGroupRenderer = function formGroupRenderer() {
   return React.createElement(
     "form",

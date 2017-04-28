@@ -2,11 +2,10 @@
 var formGroupRenderer = React.createClass({
   getInitialState: function() {
     return {
-      emailValue: "test value 1"
+      email: "test value 1"
     };
   },
   render: function() {
-    var self = this;
     return React.createElement(
       "form",
       null,
@@ -20,15 +19,19 @@ var formGroupRenderer = React.createClass({
         ),
         React.createElement("input", {
           className: "form-control",
+          name: "email",
           type: "email",
           id: "emailInput",
           value: this.state.emailValue,
-          onChange: function(event) {
-            self.setState({ emailValue: event.target.value });
-          }
+          onChange: this.changeHandler
         })
       )
     );
+  },
+  changeHandler: function(event) {
+    var changeObj = {};
+    changeObj[event.target.name] = event.target.value;
+    this.setState(changeObj);
   }
 });
 
