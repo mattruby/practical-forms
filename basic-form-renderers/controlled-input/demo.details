@@ -4,6 +4,8 @@
  description: Simple controlled React input.  You won't be able to edit the value.
  authors:
    - Matt Ruby
+ resources:
+   - https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css
  normalize_css: no
  js_wrap: b
  ...
