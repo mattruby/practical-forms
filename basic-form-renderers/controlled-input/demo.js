@@ -9,6 +9,7 @@ var formGroupRenderer = function formGroupRenderer() {
       React.createElement("label", { htmlFor: "emailInput" }, "Email address"),
       React.createElement("input", {
         className: "form-control",
+        name: "email",
         type: "email",
         id: "emailInput",
         value: ""
